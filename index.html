@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<pre style="font-size: larger;">
+
+
+1 ) Write a program to rotate the array to right
+
+input:[2,6,12,50]
+input2:2
+output:
+[12,50,2,6]
+
+-----------code------------
+a=[2,5,6,7,9]
+b=[]
+b=((a.splice(-3)))
+a.unshift(b)
+console.log(a.flat())
+
+------output-----------
+[ 6, 7, 9, 2, 5 ]
+
+
+
+2) Write a program to find the count of palindromes in the given array.
+
+input:[22,122,202,138,2]
+output:2
+
+-----------code------------
+
+a=[22,122,202,138,2]
+c=0;
+for( i of a){
+    emp="";
+    for(j=String(i).length-1;j>=0;j--){
+        emp=emp+String(i)[j]
+    }
+    if(emp==i){
+        c=c+1;
+    }
+   } console.log("No of palindromes in given array are "+c)
+
+   -----output-----
+   No of palindromes in given array are 3
+</pre>
+<body>
+    <script>
+        
+// a=[22,122,202,138,2]
+// c=0;
+// for( i of a){
+//     emp="";
+//     for(j=String(i).length-1;j>=0;j--){
+//         emp=emp+String(i)[j]
+//     }
+//     if(emp==i){
+//         c=c+1;
+//     }
+//    } console.log("No of palindromes in given array are "+c)
+
+
+// a=[2,5,6,7,9]
+// b=[]
+// b=((a.splice(-3)))
+// a.unshift(b)
+// console.log(a.flat())
+
+    </script>
+</body>
+</html>
